@@ -1,0 +1,26 @@
+package main;
+
+import java.sql.SQLException;
+
+import application.DBstatement;
+
+
+public class main {
+
+	public static void main(String[] args) {
+
+		
+		DBstatement dbStatement  = new DBstatement();
+		
+		try {
+			dbStatement.checkDBConnection();
+			System.out.println("wirbindung aufgebaut");
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}
